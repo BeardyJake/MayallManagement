@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30eg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+body {
+    background-color: #7f9fd2;
+    margin: 250px 0 0 0;
+    padding: 0;
+    font-family: Muli;
+}
+
+/* colours for backgrounds based on logo colours:
+#034da2
+#21409a
+#7f9fd2 */
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    height: 30px;
+}
+
+.subtitle {
+    margin: 0 0 0 80px;
+    padding-right: 50px;
+}
+
+.header {
+    padding-left: 50px;
+    text-align: left;
+}
+
+.logo {
+    float: left;
+    height: 50px;
+    width: 50px;
+    padding-right: 30px;
+}
+
+#topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    font-size: 24px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-grow: 1;
+    list-style-type: none;
+    padding: 20px 20px;
+    width: auto;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.menu li:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.home, .testimonials, .services {
+    border-right: 2px solid black;
+}
+
+#about {
+    display: inline-block;
+    padding: 50px 0;
+    margin: 0;
+    background-color: #034da2;
+    height: auto;
+    overflow: hidden;
+    width: auto;
+}
+
+#about h1 {       
+    padding: 30px 50px 0 20px;
+    font-size: 4vw;
+    text-align: center;
+    color: #fff;
+}
+
+#about p {
+    font-size: 3vw;
+    max-width: 40%;
+    padding-left: 20px;
+    text-align: center;
+    color: #6ba3fc;
+}
+
+.cliffs {
+    max-width: 50%;
+    float: right;
+    margin-right: 5%;
+    padding: 20px;
+}
+
+#services {
+    padding: 40px 0 50px 0;
+    height: auto;
+    text-align: center;
+    background-color: #21409a;
+    color: #fff;
+}
+
+#services a {
+    position: absolute;
+    margin-top: -280px;
+}
+
+#services h1 {
+    text-transform: uppercase;
+}
+
+#services p {
+    padding: 0 25%;
+    text-align: center;
+}
+
+#services li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+     .header {
+        padding-left: 10px;
+    }
+    
+    .subtitle {
+        font-size: 0.6em;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 50px;
+        padding-bottom: 0;
+    }
+
+    .menu li {
+        padding: 5px;
+        border: none;
+        font-size: 16px;
+        height: auto;
+    }
+
+    #topnav {
+        padding: 0;
+        margin: 0;
+    }
+    
+}
