@@ -24,7 +24,7 @@ body {
 
 a, a:visited, a:hover, a:active {
     text-decoration: none;
-    color: black;
+    color: inherit;  
 }
 
 .title {
@@ -81,7 +81,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .menu li:hover {
-    background-color: black;
+    background-color: #034da2;
     color: #fff;
 }
 
@@ -116,7 +116,7 @@ a, a:visited, a:hover, a:active {
 #about p {
     font-size: 3vw;
     text-align: center;
-    color: #6ba3fc;
+    color: #90bafd;
 }
 
 .cliffs {
@@ -133,12 +133,16 @@ a, a:visited, a:hover, a:active {
     color: #fff;
 }
 
-#services a {
+#servicesoffset {
     position: absolute;
     margin-top: -280px;
 }
 
 #services h1 {
+    text-transform: uppercase;
+}
+
+#services h4 {
     text-transform: uppercase;
 }
 
@@ -153,6 +157,15 @@ a, a:visited, a:hover, a:active {
 #services li {
     list-style-type: none;
     padding: 5px 0;
+}
+
+#emailus {
+    display: inline-block;
+    padding: 10px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #034da2;
 }
 
 @media only screen and (max-width: 650px) {
@@ -186,5 +199,9 @@ a, a:visited, a:hover, a:active {
 
     #about {
         padding-top: 100px;
+    }
+
+    #services a {
+        margin-top: -350px;
     }
 }
