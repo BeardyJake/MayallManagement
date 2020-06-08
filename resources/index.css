@@ -10,6 +10,15 @@ html {
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
 
+    @font-face {
+        font-family: 'Passion One';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Passion One Regular'), local('PassionOne-Regular'), url(https://fonts.gstatic.com/s/passionone/v10/PbynFmL8HhTPqbjUzux3JEuR9ls.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
 body {
     background-color: #7f9fd2;
     margin: 250px 0 0 0;
@@ -93,7 +102,7 @@ a, a:visited, a:hover, a:active {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 50px 5%;
+    padding: 25px 5%;
     margin: 0;
     background-color: #034da2;
     height: auto;
@@ -131,9 +140,10 @@ a, a:visited, a:hover, a:active {
     text-align: center;
     background-color: #21409a;
     color: #fff;
+    font-size: 20px;
 }
 
-#servicesoffset {
+.offset {
     position: absolute;
     margin-top: -280px;
 }
@@ -166,6 +176,86 @@ a, a:visited, a:hover, a:active {
     border-radius: 10px;
     background-color: #fff;
     color: #034da2;
+}
+
+#testimonials {    
+    background-color: #7f9fd2;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0 50px 0;
+    height: auto;
+    margin: 0;
+    font-size: 20px;
+}
+
+#testimonials h1, h4 {
+    text-transform: uppercase;
+}
+
+#testimonials p {
+    padding: 0 25% 0 25%;
+    margin: 0;
+    font-size: 20px;
+}
+
+#testimonials .quote {
+    font-family: "Passion One", cursive;
+    font-size: 150px;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;  
+    background-color: #034da2;
+    padding: 70px 0 50px 0;
+    margin: 0;
+    text-align: center;
+}
+
+#contactoffset {
+    position: absolute;
+    margin-top: -320px;
+}
+
+#contact input, textarea {
+    width: 500px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+#contact-text {
+    width: 750px;
+    padding-top: 30px;
+    color: #b1cdfa;
+    font-size: 20px;
+}
+
+#user_msg {
+    font-family: Muli;
+}
+
+.submitbutton {
+    border: 3px solid #fff;
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 16px 32px;
+    background-color: #21409a;
+    color: white;
+    cursor: pointer;    
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Muli;
+    letter-spacing: 1px;;
+}
+
+.submitbutton:hover {
+    background-color: #fff;
+    color: #21409a;
+    transition: 0.3s;
 }
 
 @media only screen and (max-width: 650px) {
