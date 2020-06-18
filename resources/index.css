@@ -77,6 +77,8 @@ a, a:visited, a:hover, a:active {
     flex-grow: 1;
     list-style-type: none;
     padding: 0 20px;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
     width: auto;
 }
 
@@ -100,10 +102,13 @@ a, a:visited, a:hover, a:active {
 }
 
 #about {
+    background-image: url("images/DoverCliffs2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 50px 5%;
+    padding: 0 5% 50px 5%;
     margin: 0;
     background-color: #034da2;
     height: auto;
@@ -118,35 +123,39 @@ a, a:visited, a:hover, a:active {
 }
 
 #about h1 {       
+    font-size: 6vw;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 40px;
+    word-wrap: normal;
+}
+
+#about p {
     font-size: 4vw;
     text-align: center;
     color: #fff;
 }
 
-#about p {
-    font-size: 3vw;
-    text-align: center;
-    color: #90bafd;
-}
-
-.cliffs {
-    max-width: 50%;
-    padding: 20px;
+.face {
+    max-width: 20%;
+    max-height: 20%;
+    margin: 30px 20px 200px 20px;
     align-self: center;
+    border-radius: 50%;
 }
 
 #services {
     padding: 40px 0 50px 0;
     height: auto;
     text-align: center;
-    background-color: #21409a;
+    background-color: #034da2;
     color: #fff;
     font-size: 20px;
 }
 
 .offset {
     position: absolute;
-    margin-top: -280px;
+    margin-top: -250px;
 }
 
 #services h1 {
@@ -180,7 +189,7 @@ a, a:visited, a:hover, a:active {
 }
 
 #testimonials {    
-    background-color: #7f9fd2;
+    background-color: #21409a;
     color: #fff;
     text-align: center;
     padding: 40px 0 50px 0;
@@ -210,11 +219,6 @@ a, a:visited, a:hover, a:active {
     text-transform: uppercase;
 }
 
-#testimonialsoffset {
-    position: absolute;
-    margin-top: -310px;
-}
-
 #testimonials .quote {
     font-family: "Passion One", cursive;
     font-size: 150px;
@@ -226,16 +230,11 @@ a, a:visited, a:hover, a:active {
 #contact {
     display: flex;
     flex-direction: row;  
-    background-color: #034da2;
+    background-color: #7f9fd2;
     padding: 70px 70px 50px 0;
     margin: 0;
     text-align: center;
     overflow: hidden;
-}
-
-#contactoffset {
-    position: absolute;
-    margin-top: -320px;
 }
 
 #form-fields {
@@ -251,7 +250,7 @@ a, a:visited, a:hover, a:active {
 #contact-text {
     width: 750px;
     padding: 30px 20px 0px 20px;
-    color: #b1cdfa;
+    color: #fff;
     font-size: 20px;
 }
 
@@ -266,7 +265,7 @@ a, a:visited, a:hover, a:active {
     border-radius: 10px;
     padding: 16px 32px;
     margin-left: 50px;
-    background-color: #21409a;
+    background-color: #7f9fd2;
     color: white;
     cursor: pointer;    
     font-size: 24px;
@@ -277,7 +276,7 @@ a, a:visited, a:hover, a:active {
 
 .submitbutton:hover {
     background-color: #fff;
-    color: #21409a;
+    color: #7f9fd2;
     transition: 0.3s;
 }
 
@@ -352,15 +351,28 @@ a, a:visited, a:hover, a:active {
     }
 
     #about {
-        padding-top: 100px;
+        padding-top: 150px;
+    }
+
+    #about h1 {
+        padding-bottom: 50px;
+    }
+
+    #about-copy {
+        padding: 0;
+        margin: 0;
+    }
+
+    .face {
+        background-size: auto;
     }
 
     #services {
         font-size: 2.5vw;
     }
 
-    #services a {
-        margin-top: -350px;
+    #servicesoffset {
+        margin-top: -330px;
     }
 
     #testimonials, #testimonials p {
@@ -376,15 +388,19 @@ a, a:visited, a:hover, a:active {
         height: 50px;
     }
 
+    #testimonialsoffset {
+        margin-top: -330px;
+    }
+
     #contact {
         flex-direction: column;
         align-items: center;
-        padding: 0px 70px 50px 0;
+        padding: 0px 50px 50px 0;
     }
 
     #contactoffset {
         position: absolute;
-        margin-top: -300px;
+        margin-top: -290px;
     }
 
     #contact-text {
@@ -461,12 +477,12 @@ a, a:visited, a:hover, a:active {
         padding-top: 100px;
     }
 
-    #services {
-        font-size: 2.5vw;
+    #about h1 {
+        padding: 30px 0 50px 0;
     }
 
-    #services a {
-        margin-top: -350px;
+    #services {
+        font-size: 2.5vw;
     }
 
     #testimonials, #testimonials p {
@@ -486,7 +502,7 @@ a, a:visited, a:hover, a:active {
 
     #contactoffset {
         position: absolute;
-        margin-top: -290px;
+        margin-top: -280px;
     }
 
     #contact input, textarea {
